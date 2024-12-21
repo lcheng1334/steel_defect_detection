@@ -1,0 +1,44 @@
+/home/arthasjian/anaconda3/envs/DeepLearning/bin/python /media/arthasjian/SharedFiles/学习/PostGraduate/沈阳化工大学/demo/SteelDetection/main.py
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+HPU available: False, using: 0 HPUs
+You are using a CUDA device ('NVIDIA GeForce RTX 4080') that has Tensor Cores. To properly utilize them, you should set `torch.set_float32_matmul_precision('medium' | 'high')` which will trade-off precision for performance. For more details, read https://pytorch.org/docs/stable/generated/torch.set_float32_matmul_precision.html#torch.set_float32_matmul_precision
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+
+  | Name       | Type               | Params | Mode
+----------------------------------------------------------
+0 | model      | UNet               | 31.0 M | train
+1 | criterion  | CrossEntropyLoss   | 0      | train
+2 | acc_1      | MulticlassAccuracy | 0      | train
+3 | acc_3      | MulticlassAccuracy | 0      | train
+4 | batch_loss | MeanMetric         | 0      | train
+----------------------------------------------------------
+31.0 M    Trainable params
+0         Non-trainable params
+31.0 M    Total params
+124.150   Total estimated model params size (MB)
+99        Modules in train mode
+0         Modules in eval mode
+Sanity Checking DataLoader 0: 100%|██████████| 2/2 [00:00<00:00,  7.18it/s]Valid Epoch Ended
+Valid Ended
+Epoch 0: 100%|██████████| 2667/2667 [08:12<00:00,  5.42it/s, v_num=0, train/loss=0.320, train/top-1_acc=0.898, train/top-3_acc=0.991]
+Validation: |          | 0/? [00:00<?, ?it/s]
+Validation:   0%|          | 0/667 [00:00<?, ?it/s]
+Validation DataLoader 0:   0%|          | 0/667 [00:00<?, ?it/s]
+Validation DataLoader 0:   0%|          | 1/667 [00:00<00:42, 15.52it/s]
+Validation DataLoader 0:   0%|          | 2/667 [00:00<00:46, 14.23it/s]
+Validation DataLoader 0:   0%|          | 3/667 [00:00<00:46, 14.42it/s]
+Validation DataLoader 0:   1%|          | 4/667 [00:00<00:45, 14.67it/s]
+Validation DataLoader 0:   1%|          | 5/667 [00:00<00:44, 14.77it/s]
+Validation DataLoader 0:   1%|          | 6/667 [00:00<00:45, 14.67it/s]
+Validation DataLoader 0:   1%|          | 7/667 [00:00<00:44, 14.76it/s]
+Validation DataLoader 0:   1%|          | 8/667 [00:00<00:44, 14.84it/s]
+Validation DataLoader 0:   1%|▏         | 9/667 [00:00<00:44, 14.71it/s]
+Validation DataLoader 0:  99%|█████████▉| 663/667 [00:45<00:00, 14.63it/s]
+Validation DataLoader 0: 100%|█████████▉| 664/667 [00:45<00:00, 14.63it/s]
+Validation DataLoader 0: 100%|█████████▉| 665/667 [00:45<00:00, 14.63it/s]
+Validation DataLoader 0: 100%|█████████▉| 666/667 [00:45<00:00, 14.63it/s]
+Validation DataLoader 0: 100%|██████████| 667/667 [00:45<00:00, 14.64it/s]Valid Epoch Ended
+
+Epoch 0: 100%|██████████| 2667/2667 [08:57<00:00,  4.96it/s, v_num=0, train/loss=0.320, train/top-1_acc=0.898, train/top-3_acc=0.991, valid/loss=0.314, valid/top-1_acc=0.899, valid/top-3_acc=0.991]Valid Ended
+Epoch 0: 100%|██████████| 2667/2667 [08:57<00:00,  4.96it/s, v_num=0, train/loss=0.320, train/top-1_acc=0.898, train/top-3_acc=0.991, valid/loss=0.314, valid/top-1_acc=0.899, valid/top-3_acc=0.991]Train Epoch Ended
